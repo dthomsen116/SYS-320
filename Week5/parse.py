@@ -4,9 +4,7 @@ import importlib
 importlib.reload(homework2)
 
 #defining the parser
-parser = argparse.ArgumentParser( 
-    description="Traverses a directory and builds a forensic body file",
-    epilog="Developed by me, 20200210")
+parser = argparse.ArgumentParser()
 
 #adding arguments 
 parser.add_argument("-d","--dir", required="True", help ="Directory that you are trying to traverse.")
